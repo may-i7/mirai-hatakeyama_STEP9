@@ -1,0 +1,79 @@
+.edit-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #1f2937;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #374151;
+}
+
+.form-control {
+    width: 100%;
+    padding: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #f9fafb;
+}
+
+.form-control:focus {
+    border-color: #2563eb;
+    outline: none;
+    background-color: #ffffff;
+}
+
+.image-preview-area {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.current-image {
+    max-width: 150px;
+    border-radius: 6px;
+    border: 1px solid #e5e7ed
+}
+
+.file-input {
+    font-size: 14px;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.btn-back {
+    background-color: #4b5563;
+    color: white !important;
+    padding: 10px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-update {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 24px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.btn-update:hover {
+    background-color: #1d4ed8;
+}

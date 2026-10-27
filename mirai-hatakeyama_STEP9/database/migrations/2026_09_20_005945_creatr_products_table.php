@@ -16,6 +16,7 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained(); 
             $table->string('name');
             $table->text('description');
+            $table->integer('stock');
             $table->string('image')->nullable();
             $table->integer('price');
             $table->timestamps();

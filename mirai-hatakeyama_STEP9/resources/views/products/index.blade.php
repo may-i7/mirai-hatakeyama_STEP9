@@ -1,94 +1,7 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>商品一覧</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        h2 {
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
+<x-app-layout>
+<link rel="stylesheet" href="{{ asset('css/index.css') }}">
 
-        .search-form {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 30px;
-            background: #fafafa;
-            padding: 15px;
-            border-radius: 4px;
-            border: 1px solid #ddd;
-        }
-        .search-form input[type="text"],
-        .search-form input[type="number"] {
-            padding: 6px 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .search-form button {
-            background-color: #0056b3;
-            color: white;
-            border: none;
-            padding: 7px 15px;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .search-form button:hover {
-            background-color: #004085;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
-        th, td {
-            padding: 12px 10px;
-            text-aligh: left;
-            border-bottom: 1px solid #ddd;
-            vertical-align: middle;
-        }
-        th {
-            background-color: #f8f9fa;
-            font-weight: bold;
-        }
-        .product-image {
-            width: 50px;
-            height: 50px;
-            object-fit: cover;
-            border-radius: 4px;
-        }
-        .btn-detail {
-            background-color: #28a745;
-            color: white;
-            padding: 5px 12px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-size: 14px;
-        }
-        .btn-detail:hover {
-            backgroud-color: #218838;
-        }
-    </style>
-</head>
-<body>
-
-<div class="container">
+<div class="container" style="padding: 20px;">
     <h2>商品一覧</h2>
 
     <form method="GET" action="{{ route('products.index') }}" class="search-form">
@@ -136,7 +49,6 @@
         </tbody>
     </table>
 </div>
+</x-app-layout>
 
-</body>
-</html>
 
